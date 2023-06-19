@@ -1,6 +1,5 @@
 package study.springdatajpa.HelloController;
 
-import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -35,7 +34,7 @@ public class MemberController {
         return map;
     }
 
-    @PostConstruct
+//    @PostConstruct
     public void init() {
         memberRepository.save(new Member("userA"));
         for (int i = 0; i < 100; i++) {

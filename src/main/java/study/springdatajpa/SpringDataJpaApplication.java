@@ -18,7 +18,7 @@ public class SpringDataJpaApplication {
     }
 
     @Bean
-    public AuditorAware<String> auditorProdiver() {
+    public AuditorAware<String> auditorProvider() {
         return () -> Optional.of(UUID.randomUUID().toString());
     }
 
